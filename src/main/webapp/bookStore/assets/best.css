@@ -1,0 +1,271 @@
+.wrapper {
+    width: 1200px;
+    margin: auto;
+    background: white;
+    padding-bottom: 20px;
+}
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* 작은 경로 표시 */
+ol {
+    list-style: none;
+    box-sizing: border-box;
+    padding: 0;
+    display: flex;
+}
+
+ol li {
+    display: inline;
+}
+
+ol li a {
+    text-decoration: none;
+    color: black;
+}
+
+/* 홈 이미지 크기 조정 */
+ol li img {
+    width: 16px;
+    height: 16px;
+}
+
+/* 위에 선택창 */
+.best {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* 베스트 셀러 */
+.best h2 {
+    margin-bottom: 0px;
+}
+
+/* 월간 베스트 */
+.best p {
+    margin-top: 0px;
+}
+
+/* nav filter */
+.filter-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    background: #E2E2E2;
+    margin-top: 10px;
+    padding: 16px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.filter-options{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.show-items {
+    border-radius: 8px;
+    height: 30px;
+    width: 100px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* nav 전체선택, 장바구니 */
+.items-end {
+    display: flex;
+    align-items: center;
+    justify-content:end;
+    margin-top: 10px;
+    padding: 16px;
+    gap: 10px;
+}
+label {
+    cursor: pointer;
+}
+
+.content-wrapper {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+/* 왼쪽 공간 창출 */
+.left-space {
+    width: 170px; 
+    border-top: solid 1px black;
+    border-right: solid 1px black;
+    flex-shrink: 0; /* 축소시 크기 고정 */
+}
+
+/* 책 정보 나열 */
+.book-list {
+    width: 100%;
+    border-top: 1px solid black;
+}
+.book-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+    background: white;
+    position: relative;
+}
+.book-item input[type="checkbox"] {
+    position: absolute;
+    top: 14px; 
+    left: 5px; 
+    width: 14px;
+    height: 14px;
+}
+.book-image {
+    width: 142px;
+    height: 210px;
+    background: #ccc;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.book-image img {
+    width: 100%;
+    height: 100%;
+}
+.book-info {
+    flex: 1;
+}
+
+.book-ranking {
+    position:absolute;
+    top : 16px;
+    background-color: #3b3838;
+    border-radius: 3px;
+    font-size: 17px;
+    width: 20px;
+    text-align: center;
+    color: white;
+}
+.book-title {
+    font-weight: bold;
+}
+.book-title a {
+    text-decoration: none;
+    color: black;
+}
+.book-meta {
+    font-size: 14px;
+    color: gray;
+}
+
+/* 책 가격 부분 */
+.book-price {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.book-price span {
+    color: coral;
+}
+
+.book-description {
+    margin-top: 20px;
+    margin-right: 40px;
+    color: gray;
+}
+
+/* 장바구니, 바로구매 */
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
+.buy-btn, .cart-btn {
+    background: blue;
+    color: white;
+    padding: 5px 10px;
+    border: 1px solid black;
+    cursor: pointer;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    width: 94px;
+}
+.cart-btn {
+    color: black;
+    background-color: white;
+}
+
+.cart-btn img {
+    width: 14px;
+    height: 13px;
+}
+
+/* 페이지네이션 */
+/* 참고 : https://m.blog.naver.com/my-thing/220857996642 */
+.page-num {
+    text-align: center;
+    width: 100%;
+}
+
+.pagination {
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.pagination li {
+    display: inline;
+    text-align: center;
+}
+
+.pagination a {
+    float: left;
+    display: block;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 5px 12px;
+    color: #96a0ad;
+    line-height: 1.5;
+}
+
+.first {
+    margin-right: 15px;
+}
+
+.last {
+    margin-left: 15px;
+}
+
+.first:hover, .last:hover, .left:hover, .right:hover {
+    color: #2e9cdf;
+}
+
+.pagination a.active {
+    cursor: pointer;
+    color: #ffffff;
+}
+
+
+.pagination a:active {
+    outline: none;
+}
+
+.modal .num {
+    margin-left: 3px;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 100%;
+}
+
+.modal .num:hover {
+    cursor: pointer;
+    color: #2e9cdf;
+}
+
+.modal .num.active, .modal .num:active {
+    background-color: #2e9cdf;
+    cursor: pointer;
+}

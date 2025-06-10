@@ -1,0 +1,486 @@
+.wrapper {
+    width: 1200px;
+    margin: auto;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* 배너 설정 */
+.banner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 890px;
+    height: 380px;
+    overflow: hidden;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* 버튼 기본 스타일 */
+.banner button {
+    position: absolute;
+    top: 45%;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;  
+    z-index: 2; 
+}
+
+#preBtn {
+    left: 10px;
+}
+
+#nextBtn {
+    right: 10px;
+}
+
+/* 배너에 마우스를 올렸을 때 버튼 보이게 하기 */
+.banner:hover button {
+    display: block;
+}
+
+.banner button img {
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+
+.slides img {
+    z-index: 1;
+    position: relative;
+}
+
+.content-wrapper {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+/* 오른쪽 공간 창출 */
+.right-space {
+    width: 250px; 
+    margin-top: 50px;
+    margin-left: 50px;
+    height: 380px;
+    border: 1px solid #ccc;
+    flex-shrink: 0; /* 축소시 크기 고정 */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 탭 메뉴 */
+
+.tab-menu {
+    font-size: 0; /* 공백 제거 */
+}
+
+.tab-menu input[type="radio"] {
+    display: none;
+    caret-color: transparent;
+    gap: 0px;
+}
+
+label {
+    font-size: 14px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.tab-menu input[type="radio"] + label {
+    display: inline-block;
+    text-align: center;
+    box-sizing: border-box; /* 테두리와 패딩을 포함하여 너비 계산 */
+    width: 50%;
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+    border-radius: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    color: #999;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.tab-menu input[type="radio"]:checked + label {
+    background-color: #ccc;
+    color: #000;
+}
+
+.tab-box {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: none;
+}
+
+/* 체크시 보임 */
+input[id="tab01"]:checked ~ .con1 {
+    display: block;
+    background-color: white;
+}
+
+input[id="tab02"]:checked ~ .con2 {
+    display: block;
+    background-color: white;
+}
+
+.ranked {
+    font-size: small;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.best-list, .search-list {
+    margin-top: 10px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-wrap: nowrap;
+    padding: 0;
+}
+
+.best-list li, .search-list li {
+    display:flex;
+    align-items: center;
+    font-size: small;
+    height: auto;
+    cursor: pointer;
+}
+
+.best-list img {
+    width: 48px;
+    height: 50px;
+}
+
+.rank {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: small;
+    color: white;
+    background-color: blue;
+    margin-right: 10px;
+}
+
+.rank-1 { 
+    background: #ff6666; color: white; 
+}
+
+.rank-info {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+li .raking-title {
+    font-weight: bold;
+}
+
+.ranking-author {
+    font-size: 10px;
+    color: gray;
+    margin-top: 5px;
+}
+
+
+/* 신작 도서 */
+.new-books {
+    text-align: center;
+    padding: 20px;
+    width: 1160px;
+    height: 500px;
+    background: #ffe6e6;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.new-books h2 {
+    margin-bottom: 50px;
+}
+
+
+.item-inner {
+    width: 200px;
+    height: 300px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.book-list {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.book {
+    width: 120px;
+    height: 170px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+}
+
+.book img {
+    border: 1px solid;
+    width: 120px;
+    height: 170px;
+    margin-bottom: 10px;
+}
+
+.book-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.book-author {
+    font-size: 12px;
+    color: #777;
+}
+
+/* 페이지네이션 */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap: 10px;
+}
+
+/* 라디오 버튼 숨기기 */
+.pagination input {
+    display: none;
+}
+
+/* 기본 점 스타일 */
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ccc;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+}
+
+/* 선택된 점을 강조 (라디오 버튼이 체크되었을 때) */
+.pagination input:checked + .dot {
+    background-color: white;
+    border: 2px solid #ED553B;
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+}
+
+/* 입력 표시 (커서) 제거
+caret-color 속성의 input 필드의 커서 색상을 지정하는 속성 */
+
+label {
+   caret-color: transparent;
+}
+
+.pagination input:checked + .dot::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: #ED553B;
+    border-radius: 50%;
+    display: block;
+}
+
+/* 더보기 버튼 */
+.more {
+    left: auto;
+    float: right;
+    background: none;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+/* 오늘의 책 */
+.today-book {
+    width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.section-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.content {
+    height: 370px;
+    justify-content: space-between;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+/* 오른쪽 서브 컨텐츠 */
+.content-small {
+    float: right;
+    width: 45%;
+}
+
+.book-inner {
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+    padding: 24px 12px 50px;
+    margin-top: 100px;
+}
+
+.book-small {
+    width: 150px;
+    height: 210px;
+    position: relative;
+    cursor: pointer;
+}
+
+
+.book-inner img {
+    width: inherit;
+    height: inherit;
+    border-radius: 10px;
+}
+
+/* 왼쪽 메인 컨텐츠 */
+.content-large {
+    float: left;
+    width: 55%;
+    height: auto;
+    z-index: 1;
+    display: flex;
+    box-sizing: content-box;
+}
+
+.book-cover {
+    width: 250px;
+    height: 370px;
+    border-radius: 10px;
+    background: #ccc;
+    position: relative;
+    cursor: pointer;
+}
+
+.book-cover img {
+    width: inherit;
+    border-radius: 10px;
+    height: inherit;
+    /* 이미지가 부모 요소의 크기에 맞게 잘리거나 확대 */
+    object-fit: cover;
+}
+
+/* 책 명언 오버레이 */
+/* 참조 https://velog.io/@parkheeyeun/%EC%9D%B4%EB%AF%B8%EC%A7%80-hover-%EA%B8%80%EC%9E%90 */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0, 0, 0, 0.5);
+    opacity: 0; /* 투명도, 보이지 않도록 설정 */
+    transition: opacity 0.2s; /* 화면 전환 요소 */
+    border-radius: 10px;
+}
+
+.book-cover:hover .overlay, .book-small:hover .overlay {
+    opacity: 1; /* 투명도 */
+}
+
+.book-quote {
+    width: 75%;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+.book-info {
+    margin-left: 20px;
+    margin-top: 30px;
+    width: 380px;
+}
+
+/* 책 가격 부분 */
+.book-price {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.book-price span {
+    color: coral;
+}
+
+.book-details {
+    margin-top: 20px;
+    font-size: small;
+}
+
+#current_date {
+	font-style: italic;
+	color: #000;
+}
+
+a {
+    text-decoration: none;
+    display: flex;
+    color: black;
+}
+
+.banner-pagination {
+    position: absolute;
+    bottom: 20px;
+    left: 0; right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    gap: 12px;
+}
+
+.banner-dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #ccc;
+    display: inline-block;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.banner-dot.active {
+    background: #4169E1;
+    transform: scale(1.2);
+}

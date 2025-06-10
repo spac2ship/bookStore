@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>도서 쇼핑몰</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- 헤더 로드될 위치 -->
+    <div id="header-container"></div>
+
+    <!-- 배너 슬라이더 -->
+    <div class="banner">
+        <button id="preBtn">〈</button>
+        <div class="slides">
+            <div class="slide">배너 1</div>
+            <div class="slide">배너 2</div>
+            <div class="slide">배너 3</div>
+        </div>
+        <button id="nextBtn">〉</button>
+    </div>
+
+    <!-- 신작 도서 섹션 -->
+    <section class="new-books">
+        <h2>신작 도서</h2>
+        <div class="book-list">
+            <div class="book"><p>책 1</p><p>저자명</p></div>
+            <div class="book"><p>책 2</p><p>저자명</p></div>
+            <div class="book"><p>책 3</p><p>저자명</p></div>
+            <div class="book"><p>책 4</p><p>저자명</p></div>
+        </div>
+    </section>
+
+    <!-- 오늘의 책 섹션 -->
+    <section class="today-book">
+        <h2>오늘의 책</h2>
+        <div class="content">
+            <div class="book-cover"></div>
+            <div class="book-info">
+                <h3>책 제목</h3>
+                <p>저자명</p>
+                <p>책 설명...</p>
+                <button>자세히 보기 →</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 푸터 로드될 위치 -->
+    <div id="footer-container"></div>
+</body>
+</html>

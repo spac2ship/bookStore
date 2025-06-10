@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header-container {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: white;
+  height: auto; /* 컨텐츠에 맞게 자동 조절 */
+}
+
+.top-banner {
+  background-color: rgba(182, 201, 201, 0.308);
+  text-align: center;
+  padding: 10px;
+  height: 60px;
+  margin: auto;
+}
+
+.top-menu {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 0;
+}
+
+.top-menu ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+  margin: 0;
+}
+
+.top-menu ul li {
+  margin-left: 15px;
+}
+
+.top-menu ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  color: rgb(158, 152, 152);
+}
+
+.main-header {
+  display: flex; /* 로고, 검색 바, 아이콘을 가로로 배치 */
+  align-items: center; /* 세로 중앙 정렬 */
+  gap: 20px; /* 로고와 검색 바 사이 간격 */
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  margin: 0px 200px 0px 50px;
+}
+
+.search-container {
+  display: flex; /* 검색 바와 아이콘을 가로로 배치 */
+  align-items: center; /* 세로 중앙 정렬 */
+  gap: 20px; /* 검색 바와 아이콘 사이 간격 */
+}
+
+.search-bar {
+  display: flex; /* 입력 필드와 버튼을 같은 줄에 배치 */
+}
+
+.search-bar input {
+  width: 500px; /* 입력 필드 너비 */
+  height: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 30px 0px 0px 30px; /* 왼쪽 모서리 둥글게 */
+}
+
+.search-bar button {
+  padding: 10px;
+  width : 50px;
+  height: 42px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 0px 30px 30px 0px; /* 오른쪽 모서리 둥글게 */
+  margin: 0px 70px 0px 0px;
+}
+
+.icon-container {
+  display: flex; /* 아이콘들을 가로로 배치 */
+  gap: 60px;
+}
+
+.icon-container img {
+  width: 40px;
+  height: auto;
+  margin-left: 20px; /* 아이콘 간격 수동 조정 */
+  
+}
+
+
+.main-nav {
+  padding: 10px 0;
+  background-color: white;
+  width: 1000px;
+  margin: 0 auto; /* 중앙 정렬을 위해 auto 사용 */
+}
+
+.main-nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav ul li a {
+  color: rgb(119, 105, 105); /* 네비게이션 링크 색상 */
+  text-decoration: none;
+  font-size: 24px;
+}

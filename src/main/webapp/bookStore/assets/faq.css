@@ -1,0 +1,347 @@
+#wrap {
+    width: 1200px;
+    height: 1400px;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    padding-top: 50px;
+}
+div {
+    display: block;
+}
+.aside {
+    width: 170px;
+    padding-right: 46px;
+    height: 846px;
+    margin: 0px;
+}
+.customer_wrap {
+    width: 984px;
+    height: 1521px;
+}
+#costomer_title {
+    margin: 0px 0px 30px;
+    font-size: 30px;
+    font-weight: 600;
+}
+.recordContainer{
+	position: relative;
+}
+#help {
+    font-size: 24px;
+    font-weight: normal;
+    color: #000000;
+}
+#search_btn {
+    font-size: 14px;
+    font-weight: normal;
+    color: #FFFFFF;
+}
+h1 {
+    font-size: 24px;
+    padding: 0px 0px 40px;
+    margin: 0;
+}
+h2 {
+    font-size: 20px;
+    width: 140px;
+    height: 30px;
+    margin: 0;
+}
+.customer_q {
+    width: 984px;
+    height: 50px;
+    display: flex;
+    flex-direction:row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+#list{
+	color: #000000;
+	text-decoration: none;
+}
+
+#text {
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    align-self: flex-end; /* 오른쪽으로 정렬 */
+}
+.search_box{
+    width: 944px;
+    height: 44px;
+    padding: 20px;
+    background-color: rgba(80, 85, 177, 0.06);
+    text-align: center;
+    border-radius: 6px;
+    margin-bottom: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.category_list {
+    margin-top: 10px;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    padding: 22px 0;
+    display: block; /* 또는 flex도 가능 */
+}
+
+#category_ul {
+    list-style: none; /* 기본 리스트 스타일 제거 */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between; /* 항목 사이 간격 균등 */
+    margin: 0px 15px;
+}
+
+#category {
+    text-align: center;
+    flex: 0 0 20%; /* 각 항목이 동일한 크기를 차지하도록 설정 */
+}
+#form_ip {
+    width: 349px;
+    height: 42px;
+    padding: 0px 45px 0x 14px;
+    border-radius: 6px;
+    border: 1px solid #eaeaea;
+}
+#btn {
+    width: 86px;
+    height: 45px;
+    margin-left: 6px;
+    border: 1px;
+    border-radius: 6px;
+    background-color: #5055b1;
+}
+.input_btn_box {
+    width: 500px;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.input_box{
+    height: 45px;
+}
+.title_wrap_title {
+    margin-top: 70px;
+    padding-bottom: 20px;
+    width: 984px;
+    height: 30px;
+}
+.inquiry_box {
+    width: 984px;
+    height: 168px;
+    margin-bottom: 50px;
+}
+.inquiry_box {
+    width: 984px; /* 전체 가로 크기 */
+    height: 168px;
+    display: flex; /* 가로 정렬 적용 */
+    align-items: center; /* 세로 중앙 정렬 */
+    gap: 20px; /* 요소 간 간격 */
+}
+/* 1:1 문의 섹션 스타일 */
+.box_bg {
+    display: flex;
+    align-items: center; /* 수직 중앙 정렬 */
+    gap: 10px; /* 문의 항목 간 간격 */
+    padding: 27px 0 28px;
+    width: 325px;
+    height: 106px;
+    background-color: rgba(80, 85, 177, 0.06);
+    border-radius: 6px;
+}
+
+.inquiry {
+    width: 162px;
+    height: 100px;
+    text-align: center;
+}
+#name {
+    font-size: 16px;
+    line-height: 15px;
+    font-weight: 700;
+    margin-right: 30px;
+}
+
+.box_size_sm{
+    width: 277px;
+    height: 106px;
+    padding: 25px;
+    border: 1px solid #eaeaea;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 6px;
+    background-color: #f7f7f7;
+}
+
+
+
+.tel_container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tel {
+    font-size: 14px;
+    font-weight: 900;
+    text-decoration: none;
+    color: #474C98;
+}
+
+/* 구분선 스타일 */
+.gap {
+    font-size: 14px;
+    color: #ccc; /* 구분자 색상 */
+}
+.desc {
+    font-size: 13px;
+    line-height: 19px;
+    color: #595959;
+
+}
+.title {
+    font-size: 15px;
+    font-weight: 700;
+}
+.ico_inquiry02 {
+    width: 62px;
+    height: 62px;
+    display: inline-block;
+    background-size: 36px 36px;
+    background-repeat: no-repeat;
+    background-image: url('./../assets/images/ico_inquiry_01_36x36@2x.png');
+    background-position: center;
+    background-color: #FFFFFF;
+    border-radius: 32px;
+}
+.ico_inquiry01 {
+    width: 62px;
+    height: 62px;
+    display: inline-block;
+    background-size: 36px 36px;
+    background-repeat: no-repeat;
+    background-image: url('./../assets/images/ico_inquiry_02_36x36@2x.png');
+    background-position: center;
+    background-color: #FFFFFF;
+    border-radius: 32px;
+}
+.tbl_col_wrap {
+    width: 984px;
+    height: 236px;
+    display: block;
+    width: 100%;
+    border-top: 1px solid #000;
+    box-sizing: border-box;
+}
+.tbl_col_wrap .tbl_col_line tr td {
+    border-bottom: 1px solid #eaeaea;
+    padding: 28px 24px;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+}
+td {
+    display: table-cell;
+}
+.tbl_col_line tr .align_left {
+    text-align: left;
+}
+.fc_light_gray {
+    text-align: center;
+}
+.cutomer_content_area {
+    width: 934px;
+    height: 44px;
+    padding: 20px;
+    margin-top: 70px;
+    background-color: rgba(80, 85, 177, 0.06);
+}
+p {
+    font-weight: 700;
+}
+#category {
+    text-decoration: none;
+    color: #000;
+}
+.recordData {
+	display: flex;
+	border-bottom: 1px solid #eee;
+	padding: 10px 0;
+	font-size: 18px;
+	font-weight:500;
+	align-items: center;
+	height: 60px;
+}
+.recordDataNum {
+	width: 60px;
+	text-align: center;
+}
+.recordDataInfo {
+	flex: 1;
+	padding: 0 10px;
+}
+.recordDataWriter {
+	width: 120px;
+	text-align: center;
+	color: #a46c25;
+}
+.recordDataDate {
+	width: 120px;
+	text-align: center;
+	color: #666;
+}
+.pagination{
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+}
+.pagination a {
+	margin: 2px;
+	text-decoration: none;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	color: #333;
+	width: 50px;
+	height: 35px;
+	font-size: 20px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.pagination a.active {
+	background-color: #333;
+	color: white;
+}
+#tb_header{
+	text-align:center;
+	background-color:#4169E1;
+}
+#num_wg{
+	width:60px;
+	height:42px;
+	 color:white;
+	 font-size: 18px;
+}
+#title_wg{
+	width:684px;
+	 color:white;
+	 font-size: 18px;
+}
+#writer_wg{
+ 	width:120px;
+ 	 color:white;
+ 	 font-size: 18px;
+}
+#date_wg{
+	width:120px;
+	 color:white;
+	 font-size: 18px;
+}

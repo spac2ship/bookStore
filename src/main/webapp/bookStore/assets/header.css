@@ -1,0 +1,168 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+@font-face {
+	font-family: 'BookkMyungjo-Bd';
+    src: url('./font/BookkMyungjo_Bold.ttf') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+* {
+	font-family: 'BookkMyungjo-Bd';
+}
+
+header{
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.header-container {
+  width: 100%;
+  margin: 0 auto;
+  background-color: white;
+  height: auto;
+   border-bottom: 0px;
+}
+
+.top-menu {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 0;
+  background-color: #4557f5;
+  margin-bottom: 10px;
+  margin: 0px auto 10px;
+}
+
+.top-menu ul {
+  margin: auto;
+  width: 1200px;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+  margin: auto;
+}
+
+.top-menu ul li {
+  margin-left: 15px;
+}
+
+.top-menu ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+.main-header {
+  display: flex; /* 로고, 검색 바, 아이콘을 가로로 배치 */
+  align-items: center; /* 세로 중앙 정렬 */
+  gap: 20px; /* 로고와 검색 바 사이 간격 */
+  margin: auto;
+  width: 1200px;
+}
+
+.logo img {
+  width: 100px;
+  height: 100px;
+  margin: 0px 150px 0px 50px;
+}
+
+.search-container {
+  display: flex; /* 검색 바와 아이콘을 가로로 배치 */
+  align-items: center; /* 세로 중앙 정렬 */
+  gap: 20px; /* 검색 바와 아이콘 사이 간격 */
+}
+
+.search-bar {
+  display: flex; /* 입력 필드와 버튼을 같은 줄에 배치 */
+}
+
+.search-bar input {
+  width: 500px; /* 입력 필드 너비 */
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 30px 0px 0px 30px; /* 왼쪽 모서리 둥글게 */
+}
+
+.search-bar button {
+  padding: 10px;
+  width : 50px;
+  height: 42px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 0px 30px 30px 0px; /* 오른쪽 모서리 둥글게 */
+  margin: 0px 70px 0px 0px;
+}
+
+.icon-container {
+  display: flex; /* 아이콘들을 가로로 배치 */
+  gap: 60px;
+}
+
+.icon-container img {
+  width: 40px;
+  height: auto;
+  margin-left: 20px; /* 아이콘 간격 수동 조정 */
+  
+}
+
+
+.main-nav {
+  padding: 10px 0;
+  background-color: white;
+  width: 1200px;
+  margin: 0 auto; /* 중앙 정렬을 위해 auto 사용 */
+  justify-content: center;
+}
+
+.main-nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav ul li a:hover {
+  font-weight: bold;
+  color: black;
+}
+
+.main-nav ul li a {
+  color: rgb(119, 105, 105); /* 네비게이션 링크 색상 */
+  text-decoration: none;
+  font-size: 22px;
+}
+
+.tooltip-icon {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-icon .tooltip-text {
+  visibility: hidden;
+  width: 70px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 6px 8px;
+  position: absolute;
+  z-index: 10;
+  top: 125%;
+  left: 0%;
+  font-size: 13px;
+  opacity: 0
+}
+
+.tooltip-icon:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+

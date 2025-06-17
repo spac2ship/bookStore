@@ -1,0 +1,248 @@
+/* 공통 스타일 */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+#wrapper {
+  width: 1200px;
+  margin: auto;
+}
+h1{
+  margin-top: 0px;
+}
+
+.banner-section{
+  display: grid;
+  grid-template-columns: 910px 290px;
+
+}
+
+
+.banner-img {
+  width: 890px;
+  height: 380px;
+  margin-bottom: 40px;
+}
+
+.banner-img2 {
+  display: grid;
+  grid-template-rows: 200px 100px 50px 30px;
+}
+
+#unlimit {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 22px;
+  color: black;
+  line-height: 1.6;
+}
+
+#unlimit2 {
+  text-align: center;
+  font-size: 16px;
+  font-weight: lighter;
+  color: gray;
+}
+
+#unlimit3{
+  text-align: center;
+  font-size: 16px;
+  font-weight: lighter;
+  color: lightgray;
+}
+
+#subb1{
+  float: left;
+  cursor: pointer;
+}
+#subb2{
+  float: right;
+  cursor: pointer;
+}
+#subb3{
+  clear: both;
+  margin-bottom: 10px;
+}
+
+.today-content {
+  display: grid;
+  grid-template-columns: 595px 305px 300px; /* Column widths */
+  grid-template-rows: auto; /* Single row */
+  margin: 0; /* No margin */
+  padding: 0; /* No padding */
+  gap: 0; /* No gap */
+  
+}
+
+#today-1{
+  padding-left: 15px;
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 20px;
+}
+#today-2{
+background-color: #ffffff; /* 회색 배경 */
+text-align: right;
+padding-right: 114px;
+padding-top: 30px;
+font-size: 12px;
+font-weight:lighter;
+margin-top: 8px;
+cursor: pointer;
+}
+
+/* 부모 컨테이너 스타일 */
+.flex-container {
+  display: flex; /* Flexbox 활성화 */
+  gap: 20px; /* 열 간격 */
+}
+
+/* 각 열 스타일 */
+.flex-item {
+  text-align: left; /* 텍스트 중앙 정렬 */
+  padding: 0px;
+}
+
+/* 1열 스타일 */
+#todaybook-container {
+  width: 300px;
+  height: 443px;
+}
+
+#todaybook {  
+  width: 300px;
+  height: 443px;
+}
+
+/* 2열 스타일 */
+#todayinfo {
+  width: 270px;
+}
+
+#book-category {
+  font-size: 16px;
+  font-weight: bolder;
+  line-height: 1.8;
+}
+
+#book-category1 {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 2.6;
+}
+#book-category2 {
+  font-size: 12px;
+  line-height: 2.6;
+}
+
+/* 3열 스타일 */
+#third-column {
+  width: 480px;
+}
+
+/* 부모 컨테이너 스타일 */
+#third-column {
+  padding: 0px;
+}
+
+/* Grid 컨테이너 스타일 */
+.grid-container {
+  display: grid; /* Grid 활성화 */
+  grid-template-columns: 210px 210px 210px; /* 두 열 생성 (동일한 너비) */
+  grid-template-rows: 240px 240px; /* 두 행 생성 (자동 높이) */
+  gap: 0px 0px; /* 셀 간격 */
+  margin-top: 0px;
+}
+
+/* 각 셀 스타일 */
+.grid-item1 {
+  background-color: #ffffff; /* 회색 배경 */
+  text-align: left;
+  padding: 0px;
+  font-size: 20px;
+  font-weight: bold;
+  
+}
+
+/* 각 셀 스타일 */
+.grid-item2 {
+  background-color: #ffffff; /* 회색 배경 */
+  text-align: right;
+  padding: 0px;
+  font-size: 12px;
+  font-weight:lighter;
+  margin-top: 8px;
+}
+/* 각 셀 스타일 */
+.grid-item3{
+  background-color: #ffffff; /* 회색 배경 */
+  text-align: center;
+  padding: 0px;
+  font-size: 16px;
+  margin-left: 0px;
+  margin-top: 0px;
+  width: 160px; /* 이미지 너비를 그리드 칸 너비에 맞춤 */
+  height: 240px; /* 이미지 높이를 그리드 칸 높이에 맞춤 */
+  object-fit: cover; /* 이미지 비율 유지 */
+  z-index: 2;
+
+}
+/* 각 셀 스타일 */
+.grid-item4, .grid-item6 {
+  background-color: #ffffff; /* 흰색 배경 */
+  text-align: left; /* 텍스트 왼쪽 정렬 */
+  padding-top: 20px; /* 내부 여백 */
+  font-size: 16px; /* 기본 폰트 크기 */
+  margin-top: 0px; /* 상단 여백 */
+  line-height: 1;
+}
+
+.badge {
+  display: inline-block; /* 인라인 요소처럼 표시 */
+  width: 30px; /* 배지 너비 */
+  height: 30px; /* 배지 높이 */
+  background-color: green; /* 배경색 */
+  color: white; /* 텍스트 색상 */
+  font-size: 16px; /* 텍스트 크기 */
+  font-weight: bold; /* 텍스트 굵기 */
+  text-align: center; /* 텍스트를 중앙 정렬 */
+  line-height: 30px; /* 텍스트를 세로 중앙 정렬 */
+  border-radius: 5px; /* 모서리를 둥글게 만듦 */
+  margin: 0px 0px 0px 0px;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: bold;
+  color: blue;
+}
+
+.writer,
+.publishing {
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+}
+
+.grid-container1 {
+  display: grid; /* Grid 활성화 */
+  grid-template-columns: repeat(7, 1fr); /* 7개의 열 생성, 동일한 너비 */
+  margin-top: 40px;
+  text-align: center;
+}
+
+/* 셀 스타일 */
+.grid-item11 {
+  background-color: #ccc; /* 회색 배경 */
+  text-align: center; /* 텍스트 중앙 정렬 */
+  padding: 20px; /* 내부 여백 */
+  margin-bottom: 40px;
+  cursor: pointer;
+}

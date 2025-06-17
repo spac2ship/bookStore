@@ -1,0 +1,162 @@
+#wrapper {
+    width: 1200px;
+    height: auto;
+    margin : auto;
+    display: flex;
+}
+h1 {
+	margin-bottom: 0px;
+}
+form {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+hr {
+    border: none;
+    height: 2px;
+    background-color: #ccc;
+    margin: 20px 0;        
+}
+div {
+    display: block;
+}
+.aside {
+    width: 170px;
+    padding-right: 46px;
+    height: 846px;
+    margin: 0px;
+}
+#costomer_title {
+    margin: 0px 0px 30px;
+    font-size: 30px;
+    font-weight: 600;
+}
+#costomer_menu {
+	font-weight:bold;
+}
+.header {
+    text-align: right;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+
+span.required  {
+	color: red;
+	font-size: 20px;
+	text-align: center;	
+}
+
+button {
+	margin-left: 20px;    
+	height: 40px;
+    padding: 0 15px;
+    font-size: 15px;
+    font-weight: bold;
+	background-color: #4169E1;
+	color: white;
+	border-radius: 5px;
+	cursor: pointer;
+	border: none;
+}
+
+/* th{
+    font-style: bold;
+    font-size: 18px;
+    width: 20%;
+}
+td {
+	width : 80%;
+    font-style: arial;
+    font-weight: bold;
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+} */
+th, td {
+    padding: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th {
+    width: 8%;  /* 더 작게 */
+}
+
+table td {
+    width: 42%;  /* th+td가 한 쌍에 50% 맞추기 */
+}
+
+/* 이거 안해주면 header에 css랑 겹침 */
+.qna-form table input, table textarea {
+    width: 100%;
+    box-sizing: border-box;
+}
+.qna-form input[type="text"], .qna-form input[type="email"] {
+	width: 100%;
+	height: 50px;
+	border-radius: 5px;
+    font-family: sans-serif, Courier, monospace;
+    font-size: 20px;
+}
+
+input[type="file"] {
+	float: left;
+}
+
+textarea {
+	width: 100%;
+	height: 300px;
+    font-family: 'arial';
+    font-size: 20px;
+}
+
+.qna-form input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
+    outline: none;
+    color: black;
+}
+
+#preview img {
+	max-width : 200px;
+	max-height: 200px;
+	margin: 5px;
+	border-radius: 8px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* 버튼 */
+.btn {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+input[type="submit"], input[type="reset"] {
+    width: 200px;
+    height: 50px;
+    background-color: #ccc;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 5px;
+    display : inline-block;
+    cursor: pointer;
+}
+
+input[type="submit"] {
+	background-color: #4169E1;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+    filter: drop-shadow(10px 10px 20px);
+}

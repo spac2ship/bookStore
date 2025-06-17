@@ -1,0 +1,102 @@
+.wrapper{
+    width:1200px;
+    height: 1600px;
+    margin:auto;
+}
+body {
+  font-family: "Noto Sans KR";
+}
+#bookcover{
+    display: grid;
+    grid-template-columns: 500px 700px;
+    grid-template-rows: auto;
+    background-color: #f5f5ff;
+    border-bottom: 1px solid #eaeaea;
+    border-top: 1px solid #eaeaea;
+    margin-bottom: 60px;
+}
+
+#book {
+    border-radius: 5px; /* 모서리를 둥글게 (선택 사항) */
+}
+
+#red{
+    color: #fc3434;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+}
+
+.product-details {
+    display: grid;
+    grid-template-columns: 80px 130px 490px;
+    height: 400px;
+    text-align: left;
+    background-color: white;
+  }
+  
+  .left-column, .right-column {
+    text-align: left;
+  }
+
+  .bookinfo, .bookinfo_title{
+    font-size: 18px;
+    line-height: 1.6;
+  }
+.bookinfo_title {
+  font-weight: bold;
+}
+  #buttonid{
+    padding-top: 70px;
+  }
+
+  .button1,.button2 {
+    width: 140px;
+    height: 70px;   
+    margin-left: 20px; 
+    background-color: #5055b1;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 1px solid #5055b1;
+  }
+  .button1 a, .button2 a {
+    text-decoration: none;
+    color: white;
+  }
+  .button3 a,.button4 a {
+    text-decoration: none;
+    color: #5055b1;
+  }
+  .button3,.button4 {
+    width: 140px;
+    height: 70px;   
+    margin-left: 20px; 
+    background-color: white;
+    color: #5055b1;
+    font-size: 16px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: 1px solid #5055b1;
+  }
+  .head{
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 20px;
+  }
+  .book_intro {
+    display: flex;
+    margin-bottom: 40px;
+  }
+  .book_intro_title {
+    margin-top: 15px;
+    width: 240px;
+    font-size: 30px;
+    font-weight: 500;
+  }
+  .book_intro_p {
+    width: 960px;
+    font-size: 18px;
+    border-top: 1px solid #eaeaea;
+  }

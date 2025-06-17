@@ -1,0 +1,165 @@
+/* 전체 선택자 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center; /* 가로 축을 기준으로 좌우 정렬 */
+    align-items: center; /* 세로 축을 기준으로 정렬 */
+    height: 100vh; /* 부모태그 상관 없이 꽉 채워짐 */
+    background-color: #f5f5f5;
+}
+.wrapper {
+    display: flex;
+    width: 800px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden; /* 넘치는 값 안보이게 함 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+form {
+	display: flex;
+	width: 100%;
+	height: 100%;
+}
+/* 왼쪽 화면 설정 */
+.left {
+    flex: 1;
+    background-color: #ECECEC;
+    display: flex;
+    /* 위에서 아래로 (열)로 새로운 아이템 추가 */
+    flex-direction: column;
+    padding: 20px;
+}
+/* 왼쪽 화면 네임 text */
+.left h1 {
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+.logo img {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+/* 오른쪽 화면 설정 */
+.right {
+    flex: 1;
+    padding: 40px;
+}
+h2 {
+    margin-bottom: 20px;
+}
+
+/* 입력 창 설정 */
+.input-group {
+    margin-bottom: 15px;
+}
+.input-group label {
+    display: block;
+    font-size: 14px;
+    color: black;
+    margin-bottom: 5px;
+}
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.input-group #add1 {
+    margin-bottom: 10px;
+}
+
+/* 가운데 버튼 설정 */
+.login-btn, .login-btn2 {
+    width: 100%;
+    padding: 10px;
+    background-color: #007AFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.login-btn2 {
+    margin-top: 20px;
+}
+.social-login button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.login-btn:hover {
+    background-color: blue;
+}
+.social-login button:hover, .signup-btn:hover {
+    background-color: #ccc;
+}
+
+/* social-login 이미지 크기 설정 */
+img {
+    display: flex;
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+}
+/* 패스워드를 잊어버리셨나요? */
+.forgot-password  {
+    text-align: left;
+    margin-top: 10px;
+}
+.forgot-password:hover {
+    text-decoration: underline;
+}
+.signup {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* 링크 연결 부분 설정 */
+.forgot-password a, .signup a {
+    text-align: left;
+    color: red;
+    font-size: small;
+    text-decoration: none;
+}
+
+/* 맨 밑에 가입 <-> 로그인 창 변환 버튼 */
+.signup-btn {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+/* 글씨 강조 */
+.signup span {
+    color: red;
+    text-decoration: none;
+}
+
+
